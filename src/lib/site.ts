@@ -1,20 +1,20 @@
 export const site = {
   name: "Mohamed Elbadry",
   shortName: "Elbadry",
-  role: "Senior Backend Developer",
+  role: "Backend Developer at Zed's",
   location: "Nasr City, Cairo, Egypt",
   email: "m7mdelbadry72@gmail.com",
   phoneDisplay: "+20 10 1137 9206",
   phoneHref: "tel:+201011379206",
   whatsapp: "https://wa.me/201011379206",
-  linkedin: "https://www.linkedin.com/in/mohamed-elbadry-4a38471b1",
+  linkedin: "https://www.linkedin.com/in/mohamed-elbadry-4a38471b1/",
   github: "https://github.com/mhmdelbadry74",
   githubHandle: "mhmdelbadry74",
   cvFile: "/Mohamed_Elbadry_Sr_Backend_Developer.pdf",
   portrait: "/portrait.jpg",
   nationality: "Egyptian",
   summary:
-    "I design and ship PHP backends that other teams can actually depend on — REST APIs, SQL-heavy data layers, and third-party integrations that stay quiet in production. Eight years across product and agency teams in Egypt taught me to lead by coaching, set clear metrics, and keep delivery honest when the requirements move.",
+    "Backend developer at Zed's in Cairo — PHP, Laravel, Node.js, and Symfony. Before that I led the backend team at PROMXA, after senior delivery there. Eight years of REST APIs, SQL-heavy data layers, and third-party integrations across Egyptian product and agency teams.",
   focus: [
     {
       index: "01",
@@ -23,8 +23,8 @@ export const site = {
     },
     {
       index: "02",
-      title: "PHP architecture",
-      body: "Laravel, CakePHP, and CodeIgniter with SOLID, MVC/MVVM, and clean architecture habits.",
+      title: "PHP, Laravel, Node.js",
+      body: "Laravel and Symfony on the PHP side, Node.js when the product needs it — same habit of clean contracts.",
     },
     {
       index: "03",
@@ -34,29 +34,54 @@ export const site = {
     {
       index: "04",
       title: "Team leadership",
-      body: "Coaching, onboarding, performance metrics, and cross-team coordination without slowing the build.",
+      body: "Coaching, onboarding, performance metrics, and cross-team coordination from the PROMXA lead years.",
     },
   ],
 } as const;
 
 export const experience = [
   {
-    role: "Senior Backend Developer",
-    company: "Promxa",
+    role: "Back End Developer",
+    company: "Zed's",
     location: "Cairo, Egypt",
-    period: "Jan 2024 — Present",
+    period: "Jan 2026 — Present",
     current: true,
     highlights: [
-      "Lead backend delivery with regular coaching, feedback, and skill development for the team.",
-      "Set clear performance metrics so progress against targets is visible, not guessed.",
-      "Onboard new engineers on procedures, quality bars, and how we ship.",
-      "Work with other department leads to streamline workflows and keep projects coordinated.",
-      "Protect delivery quality and timelines so customer-facing work stays on standard.",
+      "Backend developer at Zed's, working in PHP, Laravel, Node.js, and Symfony.",
+      "Build and maintain APIs and server-side product work for the Cairo team.",
+      "Integrate services and keep the data path between clients and servers reliable.",
     ],
   },
   {
-    role: "Senior Backend Developer",
-    company: "AAIT",
+    role: "Team Lead",
+    company: "PROMXA",
+    location: "Nasr City, Cairo, Egypt",
+    period: "Nov 2024 — Mar 2026",
+    current: false,
+    highlights: [
+      "Led backend delivery with regular coaching, feedback, and skill development for the team.",
+      "Set clear performance metrics so progress against targets is visible, not guessed.",
+      "Onboarded engineers on procedures, quality bars, and how the team ships.",
+      "Worked with other department leads to keep projects coordinated.",
+      "Protected delivery quality and timelines so customer-facing work stayed on standard.",
+    ],
+  },
+  {
+    role: "Senior Back End Developer",
+    company: "PROMXA",
+    location: "Cairo, Egypt",
+    period: "Feb 2024 — Jan 2025",
+    current: false,
+    highlights: [
+      "Owned senior backend delivery before stepping into the team lead seat.",
+      "Built REST APIs and integrations for web platforms in a distributed setup.",
+      "Tuned SQL queries and data transport for the paths that actually mattered.",
+      "Kept frontend–backend contracts explicit so the UI never had to guess at the payload.",
+    ],
+  },
+  {
+    role: "Back End Developer",
+    company: "Awamer Alshabaka (AAIT)",
     location: "Mansoura, Egypt",
     period: "Dec 2022 — Dec 2023",
     current: false,
@@ -69,17 +94,16 @@ export const experience = [
     ],
   },
   {
-    role: "Senior Backend Developer",
-    company: "Tqniat",
+    role: "Back-end Developer",
+    company: "Tqnia IT",
     location: "Cairo, Egypt",
-    period: "Feb 2022 — Nov 2022",
+    period: "Jan 2022 — Dec 2022",
     current: false,
     highlights: [
       "Shipped REST APIs used by web clients in a distributed environment.",
       "Wired third-party APIs into product surfaces and kept the contracts tidy.",
       "Owned SQL work and data transport for feature delivery.",
-      "Kept frontend–backend integration explicit so the UI never had to guess at the payload.",
-      "Contributed in Agile ceremonies — planning, stand-ups, and grooming.",
+      "Worked in Agile ceremonies — planning, stand-ups, and grooming.",
     ],
   },
   {
@@ -185,6 +209,8 @@ export const skillGroups = [
     items: [
       "PHP",
       "Laravel",
+      "Symfony",
+      "Node.js",
       "CakePHP",
       "CodeIgniter",
       "PDO",

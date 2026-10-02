@@ -31,9 +31,12 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: site.github }],
   keywords: [
     "Mohamed Elbadry",
-    "Senior Backend Developer",
+    "Backend Developer",
+    "Zed's",
     "PHP",
     "Laravel",
+    "Node.js",
+    "Symfony",
     "Cairo",
     "REST API",
   ],

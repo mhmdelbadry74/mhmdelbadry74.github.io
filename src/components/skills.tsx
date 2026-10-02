@@ -8,7 +8,7 @@ export function Skills() {
         <SectionHeading
           index="04 / Skills"
           title="The stack I actually use."
-          description="PHP and Laravel at the core, with enough frontend, SQL, and process to ship a whole product surface."
+          description="PHP, Laravel, Node.js, and Symfony at the core, with enough frontend, SQL, and process to ship a whole product surface."
         />
         <dl className="mt-12 columns-1 gap-x-12 sm:columns-2">
           {skillGroups.map((group) => (

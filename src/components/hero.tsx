@@ -5,8 +5,8 @@ import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/utils";
 
 const stats = [
-  { value: "8", label: "Years shipping PHP" },
-  { value: "6", label: "Companies" },
+  { value: "8", label: "Years shipping backends" },
+  { value: "7", label: "Companies" },
   { value: "20", label: "Public GitHub repos" },
   { value: "2018", label: "First backend job" },
 ] as const;
@@ -36,7 +36,7 @@ export function Hero() {
                 Write to me
               </a>
               <a
-                href={site.github}
+                href={site.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 className={cn(
@@ -44,7 +44,7 @@ export function Hero() {
                   "h-11 px-5"
                 )}
               >
-                GitHub
+                LinkedIn
               </a>
               <a
                 href={withBasePath(site.cvFile)}
@@ -84,7 +84,7 @@ export function Hero() {
               {site.location}
             </p>
             <p className="font-mono text-[11px] tracking-[0.16em] text-white uppercase">
-              Available
+              Zed&apos;s · Current
             </p>
           </div>
         </div>

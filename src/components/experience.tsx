@@ -7,8 +7,8 @@ export function Experience() {
       <div className="px-5 py-16 sm:px-10 lg:py-20">
         <SectionHeading
           index="02 / Experience"
-          title="Eight years of PHP backends."
-          description="Same craft across every role: REST APIs, third-party integrations, SQL, and shipping inside a sprint."
+          title={"Eight years of backends — now at Zed's."}
+          description="Current work at Zed's, team lead at PROMXA, then REST APIs and SQL across AAIT, Tqnia, and earlier agency teams."
         />
 
         <ol className="mt-12">

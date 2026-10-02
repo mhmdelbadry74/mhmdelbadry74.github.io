@@ -1,6 +1,6 @@
-# Mohamed Elbadry — Senior Backend Developer
+# Mohamed Elbadry — Backend Developer at Zed's
 
-Light editorial portfolio for [Mohamed Elbadry](https://github.com/mhmdelbadry74). Built from the CV, with selected public GitHub work.
+Light editorial portfolio for [Mohamed Elbadry](https://github.com/mhmdelbadry74). Content follows his [LinkedIn](https://www.linkedin.com/in/mohamed-elbadry-4a38471b1/) (Zed's, PROMXA team lead, AAIT, Tqnia IT) plus selected public GitHub work.
 
 Live site after GitHub Pages is on: [https://mhmdelbadry74.github.io](https://mhmdelbadry74.github.io)
 

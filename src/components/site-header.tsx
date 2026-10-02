@@ -54,7 +54,7 @@ export function SiteHeader() {
         <a href="#top" className="block">
           <p className="font-heading text-2xl leading-none">{site.shortName}</p>
           <p className="mt-2 font-mono text-[10px] tracking-[0.18em] text-muted-foreground uppercase">
-            Backend · Cairo
+            Backend · Zed&apos;s
           </p>
         </a>
         <nav className="mt-12 flex flex-1 flex-col gap-1">
