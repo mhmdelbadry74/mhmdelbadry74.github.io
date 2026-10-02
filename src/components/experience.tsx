@@ -1,58 +1,48 @@
 import { SectionHeading } from "@/components/section-heading";
-import { Badge } from "@/components/ui/badge";
 import { experience } from "@/lib/site";
 
 export function Experience() {
   return (
-    <section id="experience" className="scroll-mt-24 border-t border-border">
-      <div className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
+    <section id="experience" className="scroll-mt-20 border-b border-foreground/15">
+      <div className="px-5 py-16 sm:px-10 lg:py-20">
         <SectionHeading
-          kicker="Experience"
-          title="Eight years of PHP backends, from agency floors to senior delivery."
+          index="02 / Experience"
+          title="Eight years of PHP backends."
           description="Same craft across every role: REST APIs, third-party integrations, SQL, and shipping inside a sprint."
         />
 
-        <ol className="mt-14 space-y-0">
+        <ol className="mt-12">
           {experience.map((job, index) => (
             <li
               key={`${job.company}-${job.period}`}
-              className="relative grid gap-4 border-l border-primary/25 py-8 pl-8 last:pb-0 sm:grid-cols-[220px_1fr] sm:gap-10"
+              className="grid gap-4 border-t border-foreground/15 py-8 lg:grid-cols-[160px_220px_1fr] lg:gap-8"
             >
-              <span
-                className="absolute top-9 -left-[5px] size-2.5 rounded-full bg-primary ring-4 ring-background"
-                aria-hidden
-              />
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.16em] text-primary">
+              <p className="font-mono text-xs tracking-[0.14em] text-primary uppercase">
+                {String(index + 1).padStart(2, "0")}
+                <span className="mt-2 block text-muted-foreground normal-case tracking-normal">
                   {job.period}
-                </p>
-                <p className="mt-2 text-sm text-muted-foreground">{job.location}</p>
+                </span>
+              </p>
+              <div>
+                <h3 className="font-heading text-2xl leading-tight">{job.company}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{job.role}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{job.location}</p>
                 {job.current ? (
-                  <Badge className="mt-3 bg-primary text-primary-foreground">
+                  <p className="mt-3 inline-block bg-primary px-2 py-0.5 font-mono text-[10px] tracking-[0.16em] text-primary-foreground uppercase">
                     Current
-                  </Badge>
+                  </p>
                 ) : null}
               </div>
-              <div>
-                <h3 className="font-heading text-2xl font-medium tracking-tight">
-                  {job.role}
-                </h3>
-                <p className="mt-1 text-sm text-muted-foreground">{job.company}</p>
-                <ul className="mt-5 space-y-2.5">
-                  {job.highlights.map((item) => (
-                    <li
-                      key={item}
-                      className="flex gap-3 text-sm leading-6 text-muted-foreground"
-                    >
-                      <span className="mt-2 size-1 shrink-0 rounded-full bg-primary/70" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                {index === experience.length - 1 ? null : (
-                  <div className="mt-8 h-px bg-border sm:hidden" />
-                )}
-              </div>
+              <ul className="space-y-2">
+                {job.highlights.map((item) => (
+                  <li
+                    key={item}
+                    className="text-sm leading-6 text-muted-foreground"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ol>

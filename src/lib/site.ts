@@ -1,6 +1,6 @@
 export const site = {
   name: "Mohamed Elbadry",
-  shortName: "M. Elbadry",
+  shortName: "Elbadry",
   role: "Senior Backend Developer",
   location: "Nasr City, Cairo, Egypt",
   email: "m7mdelbadry72@gmail.com",
@@ -8,24 +8,31 @@ export const site = {
   phoneHref: "tel:+201011379206",
   whatsapp: "https://wa.me/201011379206",
   linkedin: "https://www.linkedin.com/in/mohamed-elbadry-4a38471b1",
+  github: "https://github.com/mhmdelbadry74",
+  githubHandle: "mhmdelbadry74",
   cvFile: "/Mohamed_Elbadry_Sr_Backend_Developer.pdf",
+  portrait: "/portrait.jpg",
   nationality: "Egyptian",
   summary:
     "I design and ship PHP backends that other teams can actually depend on — REST APIs, SQL-heavy data layers, and third-party integrations that stay quiet in production. Eight years across product and agency teams in Egypt taught me to lead by coaching, set clear metrics, and keep delivery honest when the requirements move.",
   focus: [
     {
+      index: "01",
       title: "REST APIs",
       body: "Contract-first services that move data cleanly between clients, servers, and partner systems.",
     },
     {
+      index: "02",
       title: "PHP architecture",
       body: "Laravel, CakePHP, and CodeIgniter with SOLID, MVC/MVVM, and clean architecture habits.",
     },
     {
+      index: "03",
       title: "Data & SQL",
       body: "MySQL, SQL Server, and SQLite — queries, transport, and Firebase when the product needs it.",
     },
     {
+      index: "04",
       title: "Team leadership",
       body: "Coaching, onboarding, performance metrics, and cross-team coordination without slowing the build.",
     },
@@ -116,6 +123,51 @@ export const experience = [
   },
 ] as const;
 
+export const projects = [
+  {
+    name: "server-health-monitor",
+    blurb: "Shell tooling for watching server health. The public repo with the most stars on the profile.",
+    stack: "Shell",
+    stars: 28,
+    href: "https://github.com/mhmdelbadry74/server-health-monitor",
+  },
+  {
+    name: "Multi-Tenant",
+    blurb: "PHP work around multi-tenant application structure — isolating data and config per tenant.",
+    stack: "PHP",
+    stars: 0,
+    href: "https://github.com/mhmdelbadry74/Multi-Tenant",
+  },
+  {
+    name: "datatable-laravel",
+    blurb: "Laravel datatables — listing, filtering, and serving tabular data the way admin panels need it.",
+    stack: "Laravel",
+    stars: 0,
+    href: "https://github.com/mhmdelbadry74/datatable-laravel",
+  },
+  {
+    name: "business2code",
+    blurb: "Digital products and software solutions. Public JavaScript repo, with GitHub Pages already on.",
+    stack: "JavaScript",
+    stars: 0,
+    href: "https://github.com/mhmdelbadry74/business2code",
+  },
+  {
+    name: "creativePhp",
+    blurb: "PHP experiments and product code from the public GitHub profile.",
+    stack: "PHP",
+    stars: 0,
+    href: "https://github.com/mhmdelbadry74/creativePhp",
+  },
+  {
+    name: "lms",
+    blurb: "Learning-management related frontend/backend work on the public profile.",
+    stack: "JavaScript",
+    stars: 0,
+    href: "https://github.com/mhmdelbadry74/lms",
+  },
+] as const;
+
 export const education = {
   school: "Misr Higher Institute for Engineering and Technology (MET)",
   degree: "Computer Science",
@@ -130,7 +182,6 @@ export const education = {
 export const skillGroups = [
   {
     title: "Backend",
-    level: 4,
     items: [
       "PHP",
       "Laravel",
@@ -148,7 +199,6 @@ export const skillGroups = [
   },
   {
     title: "Frontend",
-    level: 4,
     items: [
       "HTML",
       "CSS",
@@ -160,30 +210,26 @@ export const skillGroups = [
     ],
   },
   {
-    title: "UI frameworks",
-    level: 4,
-    items: ["Syncfusion", "Telerik"],
+    title: "Data",
+    items: ["MySQL", "SQLite", "SQL Server", "Firebase", "PostgreSQL"],
   },
   {
-    title: "Data",
-    level: 4,
-    items: ["MySQL", "SQLite", "SQL Server", "Firebase"],
+    title: "Ops & VCS",
+    items: ["Git", "GitHub", "Azure DevOps", "Docker", "Linux", "Nginx"],
   },
   {
     title: "Patterns",
-    level: 4,
     items: ["Repository", "Unit of Work", "Singleton", "SignalR"],
   },
   {
-    title: "Version control",
-    level: 4,
-    items: ["Git", "GitHub", "Azure DevOps"],
+    title: "UI kits",
+    items: ["Syncfusion", "Telerik"],
   },
 ] as const;
 
 export const languages = [
-  { name: "Arabic", level: "Native", score: 5 },
-  { name: "English", level: "Excellent", score: 4 },
+  { name: "Arabic", level: "Native" },
+  { name: "English", level: "Excellent" },
 ] as const;
 
 export const softSkills = [
@@ -195,16 +241,12 @@ export const softSkills = [
   "Adapting to new environments",
 ] as const;
 
-export const interests = [
-  "Reading",
-  "Football",
-  "Movies",
-  "Music",
-] as const;
+export const interests = ["Reading", "Football", "Movies", "Music"] as const;
 
 export const nav = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
+  { href: "#work", label: "Work" },
   { href: "#skills", label: "Skills" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
