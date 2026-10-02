@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -15,7 +15,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,20 +30,18 @@ jobs:
         run: npm ci
       - name: Build static site
         run: npm run build
-      - name: Keep GitHub Pages from running Jekyll
-        run: touch out/.nojekyll
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Put the built site at the repo root
+        run: |
+          set -euo pipefail
+          touch out/.nojekyll
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -a out/. .
+          git add -f .nojekyll index.html 404.html 404 _next _not-found favicon.ico favicon.svg portrait.jpg Mohamed_Elbadry_Sr_Backend_Developer.pdf
+          git add -f __next._full.txt __next.__PAGE__.txt __next._tree.txt index.txt || true
+          if git diff --cached --quiet; then
+            echo "Published files are already up to date."
+            exit 0
+          fi
+          git commit -m "Publish static GitHub Pages site [skip ci]"
+          git push

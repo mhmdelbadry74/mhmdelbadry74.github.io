@@ -1,8 +1,6 @@
 # Mohamed Elbadry — Backend Developer at Zed's
 
-Light editorial portfolio for [Mohamed Elbadry](https://github.com/mhmdelbadry74). Content follows his [LinkedIn](https://www.linkedin.com/in/mohamed-elbadry-4a38471b1/) (Zed's, PROMXA team lead, AAIT, Tqnia IT) plus selected public GitHub work.
-
-Live site after GitHub Pages is on: [https://mhmdelbadry74.github.io](https://mhmdelbadry74.github.io)
+Portfolio site: [https://mhmdelbadry74.github.io](https://mhmdelbadry74.github.io)
 
 ## Run locally
 
@@ -11,19 +9,13 @@ npm install
 npm run dev
 ```
 
-The app listens on [http://127.0.0.1:43147](http://127.0.0.1:43147).
+Dev server: [http://127.0.0.1:43147](http://127.0.0.1:43147)
 
 ```bash
 npm run build
 ```
 
-Writes a static site to `out/`.
-
-## GitHub Pages
-
-Repo name for a user site: **`mhmdelbadry74.github.io`**.
-
-The workflow in `.github/workflows/deploy-pages.yml` builds the static export and publishes it. In the GitHub repo: **Settings → Pages → Source: GitHub Actions**.
+Writes a static export to `out/`. The GitHub Action copies that export to the repository root so GitHub Pages (user site) can serve `index.html` instead of this README.
 
 ## Stack
 
